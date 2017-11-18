@@ -1,6 +1,6 @@
 # polkadot-js.github.io
 
-This is the source for the (polkadot-js site)(https://polkadot-js.github.io)
+This is the source for the (polkadot-js site)[https://polkadot-js.github.io]
 
 ## development
 
