@@ -27,8 +27,12 @@
 }
 
 .post-content {
+  li+li {
+    margin-top: 0.75em;
+  }
+
   p:first-child {
     background: #f5f5f5;
-  padding: 2em;
+    padding: 2em;
   }
 }
