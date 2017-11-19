@@ -3,6 +3,21 @@
 
 @import "minima";
 
+.header-js-logo {
+  position: absolute;
+  top: 28px;
+  right: 28px;
+  border: 5px solid #46483e;
+
+  img {
+    height: 56px;
+  }
+
+  .node {
+    border-left: 5px solid #46483e;
+  }
+}
+
 .site-footer {
   .contact-list {
     display: none;
@@ -12,11 +27,11 @@
 .site-header {
   border-top: none;
   border-bottom: 5px solid #f80;
-  background: #424242;
+  background: url(/assets/lotsadots.jpg) repeat;
 
   .site-title,
   .site-title:visited {
-    color: #e8e8e8;
+    // color: #e8e8e8;
   }
 }
 
