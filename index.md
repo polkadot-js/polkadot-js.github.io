@@ -2,16 +2,18 @@
 layout: page
 ---
 
+# polkadot{.js}
+
 <div class="header-js-logo"><img src="/assets/polkadot-logo.png" class="polkadot"><img src="/assets/nodejs-logo.png" class="node"></div>
 This is not an official Polkadot network site, rather it is an in-progress and ever-expanding collection of utilities for interacting with the Polkadot network clients from JavaScript.
 
-## applications
+## {.applications}
 
 In addition to the toolset defined in the preceding section, some basic applications are made available as UIs that can be run locally to -
 
 - [@polkadot/app-rpc](https://github.com/polkadot-js/app-rpc) A simple query application that allows you to select the method you want to execute, fill in the values for the inputs and makes a call to a locally-running network client. It is mostly a developer-centric tool, allowing queries to be performed on any exposed method.
 
-## libraries
+## {.libraries}
 
 The following is a non-comprehensive list of the libraries that are currently being created -
 

@@ -5,8 +5,8 @@
 
 .header-js-logo {
   position: absolute;
-  top: 28px;
-  right: 28px;
+  top: 23px;
+  right: 23px;
   border: 5px solid #46483e;
 
   img {
@@ -26,7 +26,7 @@
 
 .site-header {
   border-top: none;
-  border-bottom: 5px solid #f80;
+  border-bottom: 5px solid #46483e;
   background: url(/assets/lotsadots.jpg) repeat;
 
   .site-title,
@@ -37,10 +37,11 @@
 
 .page-content {
   h2 {
-    background: #e0e0e0;
-    border-bottom: 5px solid #f80;
+    background: #46483e;
+    border-bottom: 5px solid #83cd29;
     border-radius: 0.25em 0.25em 0 0;
-    color: #424242;
+    color: #eee;
+    font-size: 1.5em;
     font-weight: 300;
     letter-spacing: -1px;
     margin: 1.5em -1.5em 0.5em -1.5em;
