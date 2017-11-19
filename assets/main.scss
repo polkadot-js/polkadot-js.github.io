@@ -3,6 +3,11 @@
 
 @import "minima";
 
+.post-header,
+.site-nav {
+  display: none;
+}
+
 .header-js-logo {
   position: absolute;
   top: 23px;
