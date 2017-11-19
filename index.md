@@ -2,6 +2,7 @@
 layout: page
 ---
 
+<div class="header-js-logo"><img src="/assets/polkadot-logo.png" class="polkadot"><img src="/assets/nodejs-logo.png" class="node"></div>
 This is not an official Polkadot network site, rather it is an in-progress and ever-expanding collection of utilities for interacting with the Polkadot network clients from JavaScript.
 
 ## applications
