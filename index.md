@@ -2,26 +2,26 @@
 layout: page
 ---
 
-# polkadot{.js}
+{% include logo.html %}
 
-<div class="header-js-logo"><img src="/assets/polkadot-logo.png" class="polkadot"><img src="/assets/nodejs-logo.png" class="node"></div>
-This is not an official Polkadot network site, nor is it an official release of tools for the network. It is an in-progress effort to provide a collection of utilities, tools and libraries for interacting with the Polkadot network clients from JavaScript.
+<div class="grid colors"></div>
 
-## {.applications}
+- [{.apps/libs}](apps.libs.html) Libraries that help in the creation of applications and interfaces that communicate with running network clients. Includes general and API libraries.
+- [{.apps}](apps.html) User-facing applications that communicate with clients running on the network. Display the status, perform queries on clients, interact with running nodes.
+- [{.client}](client.html) An early and incomplete JavaScript implementation of a network client that can communicate with other clients on the network.
+- [{.client/libs}](client.libs.html) Libraries for networked clients and their interaction with other clients on the network. Includes communication, encoding and query-facing layers.
 
-In addition to the toolset and libraries that are being developed as the core, some basic applications are made available as UIs that can be run locally -
+## {.welcome}
+
+This is an in-progress effort to provide a collection of tools, utilities and libraries for interacting with the [Polkadot network](https://polkadot.network) from JavaScript. All code is made available on [Github](https://github.com/polkadot-js/) with a [permissive ISC license](https://en.wikipedia.org/wiki/ISC_license).
+
+While there is a slant towards developer tools, providing libraries to allow others to build tools on top of, a collection of applications are made available that allows for interaction with the network from a pure user perspective.
+
+<!--
 
 - [@polkadot/app-rpc](https://github.com/polkadot-js/app-rpc) A simple query application that allows you to select the method you want to execute, fill in the values for the inputs and makes a call to a locally-running network client. It is mostly a developer-centric tool, allowing queries to be performed on any exposed method.
 
-## {.libraries}
-
-The following is a comprehensive list of the libraries that are currently being created -
-
-- [@polkadot/api](https://github.com/polkadot-js/api) A Promised-based API library for interacting with Polkadot network clients. It wraps the RPC layer and handles the encoding and decoding of method calls to and from Polkadot network clients. Some sub-project exist,
-  - [@polkadot/api-format](https://github.com/polkadot-js/api-format), containing typed input and output value formatters for method calls.
-  - [@polkadot/api-provider](https://github.com/polkadot-js/api-provider), containing various transport providers e.g. Http, Ws. These are passed to the API when instantiating the library.
-- [@polkadot/jsonrpc](https://github.com/polkadot-js/jsonrpc) Definitions for the methods that are available on the network. The API pulls in these definitions to automatically create RPC handlers for the endpoints. In addition, documentation is created from the definitions, allowing a view of all the [available method calls](https://github.com/polkadot-js/jsonrpc/tree/master/docs).
-- [@polkadot/util](https://github.com/polkadot-js/util) A collection of useful utility-belt functions, primarily used to make development on these projects more self-contained.
+-->
 
 ## {.contributing}
 
