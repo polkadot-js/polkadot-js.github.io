@@ -13,9 +13,11 @@ layout: page
 
 ## {.welcome}
 
-This is an in-progress effort to provide a collection of tools, utilities and libraries for interacting with the [Polkadot network](https://polkadot.network) from JavaScript. All code is made available on [Github](https://github.com/polkadot-js/) with a [permissive ISC license](https://en.wikipedia.org/wiki/ISC_license).
+This is an effort to provide a collection of tools, utilities and libraries for interacting with the [Polkadot network](https://polkadot.network) from JavaScript. All code is made available on [Github](https://github.com/polkadot-js/) with a [permissive ISC license](https://en.wikipedia.org/wiki/ISC_license).
 
 While there is a slant towards developer tools, providing libraries to allow others to build tools on top of, a collection of applications are made available that allows for interaction with the network from a pure user perspective.
+
+This is not an official sponsored project, rather it is a community effort to trial tooling while the network is being developed.
 
 <!--
 
