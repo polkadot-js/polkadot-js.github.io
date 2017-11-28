@@ -8,7 +8,7 @@ title: .clients/libs
 
 <div class="grid rows"></div>
 
-- [@polkadot/client-p2p](https://github.com/polkadot-js/client-p2p) A Promised-based API library for interacting with Polkadot network clients. It wraps the RPC layer and handles the encoding and decoding of method calls to and from Polkadot network clients.
-- [@polkadot/client-rpc](https://github.com/polkadot-js/client-rpc) A lower-level formatter for API input and output value formatters. Used internally in the API for consistent method calls.
-- [@polkadot/types](https://github.com/polkadot-js/types) A collection of useful utility-belt functions, primarily used to make development on these projects consistent with less repetitive boilerplate.
-- [@polkadot/wasm](https://github.com/polkadot-js/wasm) Various transport providers e.g. Http, Ws, each with a standard interface. These are passed to the API when instantiating the API library.
+- [@polkadot/client-p2p](https://github.com/polkadot-js/client/tree/master/packages/client-p2p) A self-hosted peer-to-peer server that can communicate with client nodes
+- [@polkadot/client-rpc](https://github.com/polkadot-js/client/tree/master/packages/client-rpc) A configurable RPC server, allowing a hand-off on the boilerplate required for setting up JSONRPC endpoints.
+- [@polkadot/client-types](https://github.com/polkadot-js/client/tree/master/packages/client-types) Type definitions for the primitive typed defined on the network. (This is a development-only library, only intended for flow type checking tools)
+- [@polkadot/client-wasm](https://github.com/polkadot-js/client/tree/master/packages/client-wasm) A thin wrapper around WebAssembly to provide a clutter-free interface to executing Wasm code
