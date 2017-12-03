@@ -1,3 +1,5 @@
+![isc](https://img.shields.io/badge/license-ISC-lightgrey.svg?style=flat-square)
+
 # polkadot-js.github.io
 
 This is the source for the [polkadot-js site](https://polkadot-js.github.io), dealing with a lightweight overview of the repositories.
