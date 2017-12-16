@@ -23,6 +23,6 @@ This is not an official sponsored project, rather it is a community effort to tr
 
 Contributions are welcome. Fee free to use the tools and libraries, log issues as you find them or create pull requests for your bug-bears or features.
 
-To get started, take a look at the [@polkadot/dev repo](https://github.com/polkadot/dev) containing the guidelines and styles as well as the [overall @polkadot project](https://github.com/orgs/polkadot-js/projects/1) where we track all the issues across the different repositories.
+To get started, take a look at [@polkadot/dev](https://github.com/polkadot-js/dev#readme) which contains the guidelines and styles in addition to the [overall @polkadot project board](https://github.com/orgs/polkadot-js/projects/1) where we track all the issues across the different repositories.
 
 As a new collection of projects, we take quality seriously - library code should be comprehensively [unit tested](https://facebook.github.io/jest/) and interfaces should have [full type definitions](https://flow.org/).
