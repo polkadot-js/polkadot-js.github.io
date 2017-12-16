@@ -4,7 +4,8 @@
 @import "minima";
 
 a, a:hover, a:visited {
-  color: #2a7ae2;
+  // color: #2a7ae2;
+  color: #f80;
   cursor: pointer;
 }
 
@@ -127,7 +128,7 @@ h2 {
     }
 
     a:first-child {
-      color: #2a7ae2;
+      // color: #2a7ae2;
       display: block;
       font-size: 1.5em !important;
       font-weight: 300;
