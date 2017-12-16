@@ -19,14 +19,10 @@ While there is a slant towards developer tools, providing libraries to allow oth
 
 This is not an official sponsored project, rather it is a community effort to trial tooling while the network is being developed.
 
-<!--
-
-- [@polkadot/app-rpc](https://github.com/polkadot-js/app-rpc) A simple query application that allows you to select the method you want to execute, fill in the values for the inputs and makes a call to a locally-running network client. It is mostly a developer-centric tool, allowing queries to be performed on any exposed method.
-
--->
-
 ## {.contributing}
 
 Contributions are welcome. Fee free to use the tools and libraries, log issues as you find them or create pull requests for your bug-bears or features.
+
+To get started, take a look at the [@polkadot/dev repo](https://github.com/polkadot/dev) containing the guidelines and styles as well as the [overall @polkadot project](https://github.com/orgs/polkadot-js/projects/1) where we track all the issues across the different repositories.
 
 As a new collection of projects, we take quality seriously - library code should be comprehensively [unit tested](https://facebook.github.io/jest/) and interfaces should have [full type definitions](https://flow.org/).
