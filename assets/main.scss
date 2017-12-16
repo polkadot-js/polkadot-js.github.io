@@ -148,8 +148,8 @@ h2 {
     &:nth-child(12),
     &:nth-child(13),
     &:nth-child(16) {
-      background: rgba(248, 248, 248, 0.95);
-      color: #222;
+      background: rgba(254, 254, 254, 0.95);
+      // color: #222;
     }
 
     &:nth-child(2),
@@ -161,15 +161,15 @@ h2 {
     &:nth-child(14),
     &:nth-child(15) {
       background: #fff;
-      color: #222;
+      // color: #222;
     }
   }
 }
 
 .grid.colors+ul li {
-  a {
-    color: inherit;
-  }
+  // a {
+  //   color: inherit;
+  // }
 
   &:nth-child(1),
   &:nth-child(4),
@@ -179,8 +179,8 @@ h2 {
   &:nth-child(12),
   &:nth-child(13),
   &:nth-child(16) {
-    background: #f80;
-    color: #f5f5f5;
+    background: white;
+    // color: #f5f5f5;
   }
 
   &:nth-child(2),
@@ -191,8 +191,8 @@ h2 {
   &:nth-child(11),
   &:nth-child(14),
   &:nth-child(15) {
-    background: rgba(248, 248, 248, 0.95);
-    color: #f80;
+    background: rgba(254, 254, 254, 0.95);
+    // color: #f80;
   }
 }
 
@@ -200,12 +200,12 @@ h2 {
   flex: 0 0 100%;
 
   &:nth-child(odd) {
-    background: rgba(248, 248, 248, 0.95);
-    color: #222;
+    background: rgba(254, 254, 254, 0.95);
+    // color: #222;
   }
 
   &:nth-child(even){
     background: #fff;
-    color: #222;
+    // color: #222;
   }
 }
