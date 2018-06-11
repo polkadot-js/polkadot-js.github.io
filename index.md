@@ -6,10 +6,8 @@ layout: page
 
 <div class="grid colors"></div>
 
-- [{.apps/libs}](apps.libs.html) Libraries that help in the creation of applications and interfaces that communicate with running network clients. Includes general and API libraries.
-- [{.apps}](apps.html) User-facing applications that communicate with clients running on the network. Display the status, perform queries on clients, interact with running nodes.
+- [{.apps}](/apps) User-facing applications that communicate with clients running on the network. Display the status, perform queries on clients, interact with running nodes.
 - [{.client}](client.html) An early and incomplete JavaScript implementation of a network client that can communicate with other clients on the network.
-- [{.client/libs}](client.libs.html) Libraries for networked clients and their interaction with other clients on the network. Includes communication, encoding and query-facing layers.
 
 ## {.welcome}
 
