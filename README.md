@@ -24,5 +24,4 @@ echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bash_pr
 source ~/.bash_profile;
 rbenv install $(rbenv install -l | grep -v - | tail -1);
 rbenv global $(rbenv install -l | grep -v - | tail -1);
-gem install bundler jekyll
 ```
