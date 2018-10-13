@@ -106,6 +106,19 @@ h2 {
   }
 }
 
+.index.grid+ul {
+  li {
+    a:first-child {
+      // color: #2a7ae2;
+      display: block;
+      font-size: 1.5em !important;
+      font-weight: 300;
+      margin: 0 0 0.5em 0;
+      padding: 0;
+    }
+  }
+}
+
 .grid+ul {
   background: url(/assets/lotsadots.jpg) repeat;
   background-size: 150px 150px;
@@ -118,22 +131,12 @@ h2 {
 
   li {
     box-sizing: border-box;
-    display: block;
     flex: 0 0 50%;
     margin: 0;
-    padding: 1em 1.5em 1.5em 1.5em;
+    padding: 1em 1.5em 0em 1.5em;
 
     &:first-child {
       margin-top: 0;
-    }
-
-    a:first-child {
-      // color: #2a7ae2;
-      display: block;
-      font-size: 1.5em !important;
-      font-weight: 300;
-      margin: 0 0 0.5em 0;
-      padding: 0;
     }
 
     img {
