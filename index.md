@@ -6,7 +6,7 @@ layout: page
 
 <div class="index grid colors"></div>
 
-- [{.apps}](/apps.html) User-facing applications that communicate with clients running on the network. Display the status, perform queries on clients, interact with running nodes.
+- [{.apps}](/apps.html) User-facing applications including [Polkadot](https://polkadot.js.org/apps/) and [Substrate](https://polkadot.js.org/apps/next/) that communicate with clients running on the network. Display the status, perform queries on clients, interact with running nodes.
 - [{.client}](client.html) An early and incomplete JavaScript implementation of a network client that can communicate with other clients on the network.
 - [{.api}](https://github.com/polkadot-js/api) A library that provides a clean wrapper around all methods exposed by a Polkadot/Substrate network client. For complete documentation and examples around the classes, interfaces and their use, visit the [documentation portal](https://polkadot.js.org/api).
 - [{.telemetry}](https://telemetry.polkadot.io) Network dashboard of the [dotstats codebase](https://github.com/polkadot-js/dotstats) with both PoC-2 "Krumme Lanke" and PoC-3 "BBQ Birch" testnet tabs that list active nodes and validators, progress synchronising to the best block, network latency, geographical map of node locations, and settings.
