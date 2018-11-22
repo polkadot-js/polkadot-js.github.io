@@ -10,8 +10,6 @@ This is an effort to provide a collection of tools, utilities and libraries for 
 
 While there is a slant towards developer tools, providing libraries to allow others to build tools on top of, a collection of applications are made available that allows for interaction with the network from a pure user perspective.
 
-This is not an official sponsored project, rather it is a community effort to trial tooling while the network is being developed.
-
 ## {.tools}
 
 If you are a end-user looking to interact with the network, you can interact with [Polkadot (self-hosted node)](https://polkadot.js.org/apps/), [Polkadot (Parity-hosted node)](https://poc-2.polkadot.io/) and [Substrate (self-hosted or BBQ)](https://polkadot.js.org/apps/next/).
@@ -20,7 +18,7 @@ If you are a developer looking at intreracting with the network from your apps, 
 
 ## {.contributing}
 
-Contributions are welcome. Fee free to use the tools and libraries, log issues as you find them or create pull requests for your bug-bears or features.
+This is a community effort to trial tooling while the network is being developed. Contributions are welcome. Feel free to use the tools and libraries, log issues as you find them or create pull requests for your bug-bears or features.
 
 To get started, take a look at [@polkadot/dev](https://github.com/polkadot-js/dev#readme) which contains the guidelines and styles in addition to the [overall @polkadot project board](https://github.com/orgs/polkadot-js/projects/1) where we track all the issues across the different repositories.
 
