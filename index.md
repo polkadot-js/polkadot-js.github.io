@@ -10,7 +10,7 @@ This is an effort to provide a collection of tools, utilities and libraries for 
 
 While there is a slant towards developer tools, providing libraries to allow others to build tools on top of, a collection of applications are made available that allows for interaction with the network from a pure user perspective.
 
-If you are a end-user looking to interact with the network, you can interact with [Polkadot (self-hosted node)](https://polkadot.js.org/apps/), [Polkadot (Parity-hosted node)](https://poc-2.polkadot.io/) and [Substrate (self-hosted or BBQ)](https://polkadot.js.org/apps/next/).
+If you are a end-user looking to interact with the network, you can interact with [Polkadot/Substrate (latest, project hosted)](https://polkadot.js.org/apps/) or [Polkadot (stable, Pairity hosted)](https://poc-3.polkadot.io/)
 
 If you are a developer looking at intreracting with the network from your apps, visit the [Polkadot-JS API documentation portal](https://polkadot.js.org/api) to get started with the APIs.
 
