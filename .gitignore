@@ -6,4 +6,5 @@ tmp/
 _site
 .jekyll-metadata
 .sass-cache
+.vuepress/dist
 .vscode
