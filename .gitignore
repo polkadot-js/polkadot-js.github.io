@@ -6,3 +6,4 @@ tmp/
 _site
 .jekyll-metadata
 .sass-cache
+.vscode
