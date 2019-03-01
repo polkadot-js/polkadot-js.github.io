@@ -6,7 +6,7 @@
     "yarn": "^1.10.1"
   },
   "scripts": {
-    "build": "yarn vuepress build src --dest .",
+    "build": "rm -rf assets build *.html && yarn vuepress build src --dest build && cp -rf build/ .",
     "check": "echo \"no checks\"",
     "clean": "echo \"no clean\"",
     "test": "echo \"no test\""
