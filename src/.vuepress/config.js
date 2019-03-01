@@ -13,8 +13,8 @@ module.exports = {
         text: 'Documentation',
         items: [
           { text: 'API Reference', link: 'https://polkadot.js.org/api/' },
-          { text: 'Utilility Reference', link: 'https://polkadot.js.org/common/' },
-          { text: 'UI Library Reference', link: 'https://polkadot.js.org/ui/' },
+          { text: 'Utility Reference', link: 'https://polkadot.js.org/common/' },
+          { text: 'UI Libs Reference', link: 'https://polkadot.js.org/ui/' },
         ]
       },
       { text: 'GitHub Org', link: 'https://github.com/polkadot-js/' }
