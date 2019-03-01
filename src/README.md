@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /hero-560-2.png
+heroImage: /static/hero-560-2.png
 heroText:
 tagline: Bringing JavaScript to the Polkadot world.
 actionText: Repository Overview
