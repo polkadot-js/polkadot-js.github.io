@@ -9,7 +9,7 @@ tagline:
 features:
 - title: User Applications
   details: User Web and command-line driven applications to perform tasks on the network.
-- title: Powerfull API
+- title: Powerful API
   details: A fully-featured API for interfacing with Polkadot and Substrate chains in your applications.
 - title: Client
   details: An alternative implementation of a Polkadot Runtime Environment for substrate chains.
