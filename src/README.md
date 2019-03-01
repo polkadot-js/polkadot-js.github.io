@@ -1,10 +1,11 @@
 ---
 home: true
-heroImage: /static/hero-560-2.png
+# heroImage: /static/hero-560-2.png
 heroText:
-tagline: Bringing JavaScript to the Polkadot world.
-actionText: Repository Overview
-actionLink: /REPOS.md
+tagline:
+# Bringing JavaScript to the Polkadot world.
+# actionText: Repository Overview
+# actionLink: /REPOS.md
 features:
 - title: User Applications
   details: User Web and command-line driven applications to perform tasks on the network.
@@ -19,6 +20,12 @@ footer: Apache-2 Licensed | Copyright © 2017-2019 polkadot-js authors and contr
 ## Welcome
 
 This is an effort to provide a collection of tools, utilities and libraries for interacting with the [Polkadot network](https://polkadot.network) from JavaScript. All code is made available on [Github](https://github.com/polkadot-js/) with a [permissive Apache-2.0 license](https://en.wikipedia.org/wiki/Apache_License#Version_2.0).
+
+::: tip Repositories
+In a rush and just want a repo overview? [Jump right in](/REPOS.md) and get an overview of the code in the project.
+:::
+
+## Layout
 
 While there is a slant towards developer tools, providing libraries to allow others to build tools on top of, a collection of applications are made available that allows for interaction with the network from a pure user perspective.
 

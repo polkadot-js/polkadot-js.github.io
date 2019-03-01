@@ -1,7 +1,7 @@
 module.exports = {
   base: '/',
   title: 'polkadot-js',
-  description: 'A collection of tools and interafces for the Polkadot project',
+  description: 'A collection of tools, interfaces and libraries around the Polkadot project. Polkadot does JavaScript.',
   markdown: {
     lineNumbers: true
   },
