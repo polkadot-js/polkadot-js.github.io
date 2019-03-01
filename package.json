@@ -6,7 +6,7 @@
     "yarn": "^1.10.1"
   },
   "scripts": {
-    "build": "yarn vuepress build template --dest .",
+    "build": "yarn vuepress build src --dest .",
     "check": "echo \"no checks\"",
     "clean": "echo \"no clean\"",
     "test": "echo \"no test\""
