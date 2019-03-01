@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "private": true,
+  "engines": {
+    "node": "^10.13.0",
+    "yarn": "^1.10.1"
+  },
+  "scripts": {
+    "build": "rm -rf assets build static *.html && yarn vuepress build src --dest build && cp -rf build/ .",
+    "check": "echo \"no checks\"",
+    "clean": "echo \"no clean\"",
+    "start": "yarn vuepress dev src",
+    "test": "echo \"no test\""
+  },
+  "devDependencies": {
+    "vuepress": "^1.0.0-alpha.40"
+  }
+}

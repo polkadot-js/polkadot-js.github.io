@@ -1,8 +1,2 @@
-coverage/
-lib/
+build/
 node_modules/
-vendor/
-tmp/
-_site
-.jekyll-metadata
-.sass-cache
