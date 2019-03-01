@@ -12,7 +12,7 @@ The [apps](https://github.com/polkadot-js/apps) repo hosts the Polkadot-JS inter
 
 The [api](https://github.com/polkadot-js/api) repo hosts the `@polkadot/api` package, a fully-featured API library to interact with Polkadot and Substrate nodes. It is fully [documented](https://polkadot.js.org/api/) and comes with [examples](https://polkadot.js.org/api/examples/promise/) to quickly get you started in developing applications.
 
-It is provided in 2 flavours, a Promise-based version (using callbacks for subscription interfaces) and an RxJs-base version, using Obervables all the way through.
+It is provided in 2 flavours, a Promise-based version (using callbacks for subscription interfaces) and an RxJs-based version, using Obervables all the way through.
 
 ## Common utilities
 
