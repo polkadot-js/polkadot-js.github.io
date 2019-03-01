@@ -1,3 +1,21 @@
+---
+home: true
+heroImage: /hero-560-2.png
+heroText:
+tagline: Bringing JavaScript to the Polkadot world.
+actionText: Repository Overview
+actionLink: /REPOS.md
+features:
+- title: User Applications
+  details: User Web and command-line driven applications to perform tasks on the network.
+- title: Powerfull API
+  details: A fully-featured API for interfacing with Polkadot and Substrate chains in your applications.
+- title: Client
+  details: An alternative implementation of a Polkadot Runtime Environment for substrate chains.
+
+footer: Apache-2 Licensed | Copyright © 2017-2019 polkadot-js authors and contributors
+---
+
 ## Welcome
 
 This is an effort to provide a collection of tools, utilities and libraries for interacting with the [Polkadot network](https://polkadot.network) from JavaScript. All code is made available on [Github](https://github.com/polkadot-js/) with a [permissive Apache-2.0 license](https://en.wikipedia.org/wiki/Apache_License#Version_2.0).

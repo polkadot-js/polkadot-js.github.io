@@ -9,6 +9,7 @@
     "build": "rm -rf assets build *.html && yarn vuepress build src --dest build && cp -rf build/ .",
     "check": "echo \"no checks\"",
     "clean": "echo \"no clean\"",
+    "start": "yarn vuepress dev src",
     "test": "echo \"no test\""
   },
   "devDependencies": {
