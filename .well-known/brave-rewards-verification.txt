@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: polkadot.js.org 
+Token: 30c684d45594a7e77e3a54003f5e2469de49aebad5c226e5e1418aed010eb6f6
