@@ -12,6 +12,6 @@
     "test": "echo \"no test\""
   },
   "devDependencies": {
-    "vuepress": "^1.0.0-alpha.40"
+    "vuepress": "^1.0.0-rc.1"
   }
 }
