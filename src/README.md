@@ -14,7 +14,7 @@ features:
 - title: Client
   details: An alternative implementation of a Polkadot Runtime Environment for substrate chains.
 
-footer: Apache-2 Licensed | Copyright © 2017-2019 polkadot-js authors and contributors
+footer: Apache-2 Licensed | Copyright © 2017-2020 polkadot-js authors and contributors
 ---
 
 ## Welcome
