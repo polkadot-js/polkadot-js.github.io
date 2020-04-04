@@ -1161,9 +1161,9 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*":
-  version: 13.9.8
-  resolution: "@types/node@npm:13.9.8"
-  checksum: 2/72610b1cca1ecb1b28ef493fac3a67975e32a814ec5dac888d55e9374c9475664ec797875ea7cb941b94a5016c9d4b0e4d40e60cc9793ef6aa279d3bd1e41fd3
+  version: 13.11.0
+  resolution: "@types/node@npm:13.11.0"
+  checksum: 2/8691b7c62a978a78e54c5019c5b055400ff7977fcd6694ce62c79c8c3b1bf5e4818195177693e77950df97134787703c6b0e54d6144eb4dfd183a2ac3e510f39
   languageName: node
   linkType: hard
 
@@ -2536,9 +2536,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.0, caniuse-lite@npm:^1.0.30001036, caniuse-lite@npm:^1.0.30001038":
-  version: 1.0.30001038
-  resolution: "caniuse-lite@npm:1.0.30001038"
-  checksum: 2/ea241b85fe7f0c4bb98e0b505def4141d21b330203097e3ec7adaad33fb2839b0e7bcfa98269cd2a4050de892a10c3282d8f4ba21acabb2b068a16da8360cdc9
+  version: 1.0.30001039
+  resolution: "caniuse-lite@npm:1.0.30001039"
+  checksum: 2/6eb77c44e5e2c156fe5b244a4fba0ceb272ddb9e7cd61891fa74fd36788fa8aa2fb85586ee51f9c60c9f4a976da7daa2e479652a54894e7f72fbd8b48a36cbef
   languageName: node
   linkType: hard
 
@@ -3674,9 +3674,9 @@ __metadata:
   linkType: hard
 
 "dom-walk@npm:^0.1.0":
-  version: 0.1.1
-  resolution: "dom-walk@npm:0.1.1"
-  checksum: 2/7c51742af594f07b209b0d22e8232b8809f7f9c37318257063199e607ae9a57338b969941d470ceaef818ec25d09937494e97a2f0583a614d324654bcb6b208c
+  version: 0.1.2
+  resolution: "dom-walk@npm:0.1.2"
+  checksum: 2/948c7527f3798cae9d7039cc0e5dc9f013ebd701d7d99478bac79d7d9eb8b81e7b6e836526e21ed9b156466b268e30ea0f2d5b72df955fabec3ce2aa7dc0086e
   languageName: node
   linkType: hard
 
@@ -3776,9 +3776,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.3.390":
-  version: 1.3.393
-  resolution: "electron-to-chromium@npm:1.3.393"
-  checksum: 2/37beaa6b945316adf912c578283a02e0919d65a1cf8293a50fe39f80c85e5c1cb378abdf0f754386e72a1c066943297d976cabc34d3048676072f377ee0e3a4b
+  version: 1.3.396
+  resolution: "electron-to-chromium@npm:1.3.396"
+  checksum: 2/a2f091cc6ef32730d4171c32c78428754ea120f4bb70c90580c8c80107d783077f3c0acd061342226677b1963c57bbe319adf620eb1542eff71d72ac59d03a04
   languageName: node
   linkType: hard
 
@@ -6493,13 +6493,13 @@ __metadata:
   linkType: hard
 
 "mkdirp@npm:^0.5.0, mkdirp@npm:^0.5.1, mkdirp@npm:^0.5.3, mkdirp@npm:~0.5.1, mkdirp@npm:~0.5.x":
-  version: 0.5.4
-  resolution: "mkdirp@npm:0.5.4"
+  version: 0.5.5
+  resolution: "mkdirp@npm:0.5.5"
   dependencies:
     minimist: ^1.2.5
   bin:
     mkdirp: bin/cmd.js
-  checksum: 2/914b8b8b1c34128c06ddd41a1d33f1515f0dde80ba233e321385eedcd4cc71bc4a4b66c19c7fde708c3e7f22969403b371b81663761cff8b01a9a72c2b7bdd12
+  checksum: 2/9dd9792e891927b14ca02226dbe1daeb717b9517a001620d5e2658bbc72c5e4f06887b6cbcbb60595fa5a56e701073cf250f1ed69c1988a6b89faf9fd6a4d049
   languageName: node
   linkType: hard
 
@@ -6586,15 +6586,15 @@ __metadata:
   linkType: hard
 
 "needle@npm:^2.2.1":
-  version: 2.4.0
-  resolution: "needle@npm:2.4.0"
+  version: 2.4.1
+  resolution: "needle@npm:2.4.1"
   dependencies:
     debug: ^3.2.6
     iconv-lite: ^0.4.4
     sax: ^1.2.4
   bin:
-    needle: ./bin/needle
-  checksum: 2/e6f221672eab5bb0043175434b2ca45c0099e8683f9813237acc6a998525ae369a8946b92a841628ad570835fd61485629a44646431b11b8732c7b64a47cb678
+    needle: bin/needle
+  checksum: 2/f96e393498d0de86e27286fa185bd62599da3ed970ce33321bd2417ddd4f42cf83abf635c786c426a0202913f3f74a17470150f2e2793fc3ff992ba0d4651806
   languageName: node
   linkType: hard
 
@@ -7856,14 +7856,14 @@ __metadata:
   linkType: hard
 
 "prismjs@npm:^1.13.0":
-  version: 1.19.0
-  resolution: "prismjs@npm:1.19.0"
+  version: 1.20.0
+  resolution: "prismjs@npm:1.20.0"
   dependencies:
     clipboard: ^2.0.0
   dependenciesMeta:
     clipboard:
       optional: true
-  checksum: 2/41fe7f4e7dd08dd8c312d3be272ea9964710a0d6f5ce9cae6fe2a489feb498fd188c5feffc4e6fc410ee54b803ad4afe185427cb5ce99844e984bc1cc29be482
+  checksum: 2/b4cb8bdd48a18421e8eabf936ad38a33254250a7d8576d05a2286fbae8d07ef2b2a92a3c22f5e61fa9ba72eeff3d246326274138470f4c98d7a06adcfee4dcae
   languageName: node
   linkType: hard
 
@@ -8888,15 +8888,15 @@ __metadata:
   linkType: hard
 
 "spdy@npm:^4.0.1":
-  version: 4.0.1
-  resolution: "spdy@npm:4.0.1"
+  version: 4.0.2
+  resolution: "spdy@npm:4.0.2"
   dependencies:
     debug: ^4.1.0
     handle-thing: ^2.0.0
     http-deceiver: ^1.2.7
     select-hose: ^2.0.0
     spdy-transport: ^3.0.0
-  checksum: 2/a4bfb5aad131810b87f5c3cacbc57a6929f53b351c92e10f8278b6d662fa5e971e31ae3f77f6b11f8faf4978a58bc7891612a11cadaf8df1b3fd59dd15b333b5
+  checksum: 2/388d39324d706a0a73d1d16fa93397029b3eb47ff2aaa3ad58c3d9c7682ce53eb847795560dc08190b7e3f8404e8bf4814ff3fd74cf0c849796310f1cd8a5f92
   languageName: node
   linkType: hard
 
