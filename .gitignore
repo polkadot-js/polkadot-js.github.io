@@ -1,6 +1,0 @@
-build/
-node_modules/
-.pnp.*
-.yarn/*
-!.yarn/releases
-!.yarn/plugins
