@@ -52,7 +52,7 @@
     </div>
     <script>
       // creates a random dot for the background
-      function createDot () {
+      function createDot (color) {
         const dot = document.createElement('div');
         const size = (Math.floor(4000 * Math.random()) / 1000) + 0.5;
 
@@ -61,7 +61,7 @@
         dot.style.left = `${(window.innerWidth * Math.random())}px`;
         dot.style.height = `${size}em`;
         dot.style.width = `${size}em`;
-        dot.style.backgroundColor = `rgba(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.random() * 0.66})`;
+        dot.style.backgroundColor = color;
 
         document.body.appendChild(dot);
       }
@@ -80,7 +80,7 @@
           style.innerHTML = `a { color: hsl(${hue}, 45%, 45%) !important } .box { border-color: hsl(${hue}, 45%, 75%) }`;
 
           if (++counter % 4 === 0) {
-            createDot();
+            createDot(`hsl(${hue}, 45%, 75%)`);
           }
         }, 25);
       }
