@@ -3,41 +3,94 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=0.5, maximum-scale=1">
-    <title>polkadot{.js} - Polkadot does JavaScript</title>
+    <title>polkadot{.js}</title>
     <style>
-      body { background: white; color: #4e4e4e; font-family: sans-serif; padding: 0 }
+      body { color: #4e4e4e; font-family: sans-serif; height: 100vh; overflow: hidden; padding: 0 }
       a { color: #ff8c00 !important; text-decoration: none }
       h3 { opacity: 0.75; font-weight: 100 }
-      .content { display: flex; align-items: center; justify-content: center }
-      .box { border: 1px solid #ddd; border-radius: 0.25rem; margin: 0.5rem; min-width: 15rem; padding: 1rem; text-align: center; white-space: nowrap; width: 15rem; }
+      .container { align-items: center; display: flex; flex-direction: column; justify-content: center; height: 100%; }
+      .row { align-items: center; display: flex; justify-content: center }
+      .box { background: rgba(255, 255, 255, 0.75); border: 0.125rem solid #ddd; border-radius: 0.25rem; margin: 0.5rem; min-width: 15rem; padding: 1rem; text-align: center; white-space: nowrap; width: 15rem; z-index: 1 }
+      .dot { border-radius: 50%; position: absolute; z-index: 0 }
+      .header { align-items: center; background: rgba(255, 255, 255, 0.75); display: flex; left: 0; padding: 0.5rem 1rem; position: fixed; right: 0; top: 0 }
+      .header div { margin-left: 0.5rem }
+      .header img { height: 1.5rem; width: 1.5rem }
     </style>
   </head>
   <body>
-    <div class="content">
-      <div class="box">
-        <h3>Apps Wallet (hosted)</h3>
-        <p><a href="https://polkadot.js.org/apps/">polkadot.js.org/apps</a></p>
+    <div class="container">
+      <div class="row">
+        <div class="box">
+          <h3>Apps Wallet (hosted)</h3>
+          <p><a href="https://polkadot.js.org/apps/">polkadot.js.org/apps</a></p>
+        </div>
+        <div class="box">
+          <h3>Apps Wallet (IPFS)</h3>
+          <p><a href="https://dotapps.io/">dotapps.io</a></p>
+        </div>
       </div>
-      <div class="box">
-        <h3>Apps Wallet (IPFS)</h3>
-        <p><a href="https://dotapps.io/">dotapps.io</a></p>
+      <div class="row">
+        <div class="box">
+          <h3>Documentation</h3>
+          <p><a href="https://polkadot.js.org/docs/">polkadot.js.org/docs</a></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="box">
+          <h3>Extension</h3>
+          <p><a href="https://github.com/polkadot-js/extension/">github.com/polkadot-js/extension</a></p>
+        </div>
+        <div class="box">
+          <h3>API</h3>
+          <p><a href="https://github.com/polkadot-js/api/">github.com/polkadot-js/api</a></p>
+        </div>
       </div>
     </div>
-    <div class="content">
-      <div class="box">
-        <h3>Documentation</h3>
-        <p><a href="https://polkadot.js.org/docs/">polkadot.js.org/docs</a></p>
-      </div>
+    <div class="header">
+      <img src="logo.svg" />
+      <div>polkadot{.js}</div>
     </div>
-    <div class="content">
-      <div class="box">
-        <h3>Extension</h3>
-        <p><a href="https://github.com/polkadot-js/extension/">github.com/polkadot-js/extension</a></p>
-      </div>
-      <div class="box">
-        <h3>API</h3>
-        <p><a href="https://github.com/polkadot-js/api/">github.com/polkadot-js/api</a></p>
-      </div>
-    </div>
+    <script>
+      // creates a random dot for the background
+      function createDot () {
+        const dot = document.createElement('div');
+        const size = (Math.floor(4000 * Math.random()) / 1000) + 0.5;
+
+        dot.classList.add('dot');
+        dot.style.top = `${(window.innerHeight * Math.random())}px`;
+        dot.style.left = `${(window.innerWidth * Math.random())}px`;
+        dot.style.height = `${size}em`;
+        dot.style.width = `${size}em`;
+        dot.style.backgroundColor = `rgba(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.random() * 0.66})`;
+
+        document.body.appendChild(dot);
+      }
+
+      // Random background by tweaking the hue. Additionally it adjusts the link & border colors
+      function changeBackground () {
+        const style = document.createElement('style');
+        let hue = Math.floor(Math.random() * 359);
+        let counter = 0;
+
+        document.head.appendChild(style);
+
+        setInterval(() => {
+          hue = (hue + 1) % 360;
+          document.body.style.background = `hsl(${hue}, 45%, 85%)`;
+          style.innerHTML = `a { color: hsl(${hue}, 45%, 45%) !important } .box { border-color: hsl(${hue}, 45%, 75%) }`;
+
+          // if (++counter % 4 === 0) {
+          //   createDot();
+          // }
+        }, 25);
+      }
+
+      // Creates the content
+      function main () {
+        changeBackground();
+      }
+
+      main();
+    </script>
   </body>
 </html>
