@@ -10,9 +10,9 @@
       h3 { opacity: 0.75; font-weight: 100 }
       .container { align-items: center; display: flex; flex-direction: column; justify-content: center; height: 100%; }
       .row { align-items: center; display: flex; justify-content: center }
-      .box { background: rgba(255, 255, 255, 0.75); border: 0.125rem solid #ddd; border-radius: 0.25rem; margin: 0.5rem; min-width: 15rem; padding: 1rem; text-align: center; white-space: nowrap; width: 15rem; z-index: 1 }
+      .box { background: rgba(255, 255, 255, 0.85); border: 0.125rem solid #ddd; border-radius: 0.25rem; margin: 0.5rem; min-width: 15rem; padding: 1rem; text-align: center; white-space: nowrap; width: 15rem; z-index: 2 }
       .dot { border-radius: 50%; position: absolute; z-index: 0 }
-      .header { align-items: center; background: rgba(255, 255, 255, 0.75); display: flex; left: 0; padding: 0.5rem 1rem; position: fixed; right: 0; top: 0 }
+      .header { align-items: center; background: rgba(255, 255, 255, 0.75); display: flex; left: 0; padding: 0.5rem 1rem; position: fixed; right: 0; top: 0; z-index: 1 }
       .header div { margin-left: 0.5rem }
       .header img { height: 1.5rem; width: 1.5rem }
     </style>
@@ -79,9 +79,9 @@
           document.body.style.background = `hsl(${hue}, 45%, 85%)`;
           style.innerHTML = `a { color: hsl(${hue}, 45%, 45%) !important } .box { border-color: hsl(${hue}, 45%, 75%) }`;
 
-          // if (++counter % 4 === 0) {
-          //   createDot();
-          // }
+          if (++counter % 4 === 0) {
+            createDot();
+          }
         }, 25);
       }
 
