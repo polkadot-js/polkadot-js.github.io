@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=0.5, maximum-scale=1">
+    <link rel="shortcut icon" href="favicon.ico">
     <title>polkadot{.js}</title>
     <style>
       body { color: #4e4e4e; font-family: sans-serif; height: 100vh; overflow: hidden; padding: 0 }
@@ -11,11 +12,12 @@
       canvas#dots { left: 0; position: fixed; top: 0; z-index: 0 }
       .container { align-items: center; display: flex; flex-direction: column; justify-content: center; height: 100%; }
       .row { align-items: center; display: flex; justify-content: center }
-      .box { background: rgba(255, 255, 255, 0.85); border: 0.125rem solid #ddd; border-radius: 0.25rem; margin: 0.5rem; min-width: 15rem; padding: 1rem; text-align: center; white-space: nowrap; width: 15rem; z-index: 2 }
+      .box { background: rgba(255, 255, 255, 0.85); border: 0.125rem solid #ddd; border-radius: 0.25rem; flex: 1 1; margin: 0.5rem; min-width: 15rem; max-width: 20rem; padding: 1rem; text-align: center; white-space: nowrap; width: 20rem; z-index: 2 }
       .dot { border-radius: 50%; position: absolute; z-index: 0 }
       .header { align-items: center; background: rgba(255, 255, 255, 0.75); display: flex; left: 0; padding: 0.5rem 1rem; position: fixed; right: 0; top: 0; z-index: 1 }
       .header div { margin-left: 0.5rem }
       .header img { height: 1.5rem; width: 1.5rem }
+      .desc { font-size: 0.85rem; opacity: 0.8; white-space: normal }
     </style>
   </head>
   <body>
@@ -24,27 +26,32 @@
       <div class="row">
         <div class="box">
           <h3>Apps Wallet (hosted)</h3>
+          <p class="desc">The wallet built on the polkadot-js stack. This version is updated alongside any changes to the code and always has the latest features.</p>
           <p><a href="https://polkadot.js.org/apps/">polkadot.js.org/apps</a></p>
         </div>
         <div class="box">
           <h3>Apps Wallet (IPFS)</h3>
+          <p class="desc">An IPFS version of the polkadot-js wallet. This version is updated weekly but fits closer with the Web3 vision of decentralization.</p>
           <p><a href="https://dotapps.io/">dotapps.io</a></p>
         </div>
       </div>
       <div class="row">
         <div class="box">
           <h3>Documentation</h3>
+          <p class="desc">Developer documentation for all (most?) of the libraries under the polkadot-js umbrella. If you want to build, this is where to start.</p>
           <p><a href="https://polkadot.js.org/docs/">polkadot.js.org/docs</a></p>
         </div>
       </div>
       <div class="row">
         <div class="box">
           <h3>Extension</h3>
+          <p class="desc">A browser-based vault for management of your account keys. It is meant to be used alongside wallets such as the apps UI.</p>
           <p><a href="https://github.com/polkadot-js/extension/">github.com/polkadot-js/extension</a></p>
         </div>
         <div class="box">
           <h3>API</h3>
           <p><a href="https://github.com/polkadot-js/api/">github.com/polkadot-js/api</a></p>
+          <p class="desc">The polkadot-js API allows interaction with any Polkadot/Substrate-based chain. It handles all encoding and interactions.</p>
         </div>
       </div>
     </div>
