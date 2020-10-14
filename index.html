@@ -11,11 +11,11 @@
       canvas#dots { left: 0; position: fixed; top: 0; z-index: 0 }
       h3 { font-weight: 100; margin: 1rem 0; opacity: 0.95; text-transform: lowercase }
       p { margin: 1rem 0 }
-      .box { background: rgba(255, 255, 255, 0.85); border: 0.125rem solid #ddd; border-radius: 0.25rem; flex: 1 1; margin: 0.5rem; min-width: 15rem; max-width: 21rem; padding: 0 1.5rem; text-align: center; white-space: nowrap; width: 21rem; z-index: 2 }
+      .box { background: rgba(255, 255, 255, 0.85); border-radius: 0.25rem; flex: 1 1; margin: 0.5rem; min-width: 15rem; max-width: 21rem; padding: 0 1.5rem; text-align: center; white-space: nowrap; width: 21rem; z-index: 2 }
       .container { align-items: center; display: flex; flex-direction: column; justify-content: center; height: 100%; }
       .desc { font-size:  0.95rem; opacity: 0.85; white-space: normal }
       .dot { border-radius: 50%; position: absolute; z-index: 0 }
-      .header { align-items: center; background: rgba(255, 255, 255, 0.75); display: flex; left: 0; justify-content: space-between; padding: 0.5rem 1rem; position: fixed; right: 0; top: 0; z-index: 1 }
+      .header { align-items: center; background: rgba(255, 255, 255, 0.85); display: flex; left: 0; justify-content: space-between; padding: 0.5rem 1rem; position: fixed; right: 0; top: 0; z-index: 1 }
       .header div.logo { display: flex; align-items: center }
       .header img { height: 1.5rem; margin-right: 0.5rem; width: 1.5rem }
       .row { align-items: center; display: flex; justify-content: center }
@@ -78,7 +78,7 @@
       function draw () {
         hue = (hue + 1) % 360;
         document.body.style.background = `hsl(${hue}, 45%, 85%)`;
-        style.innerHTML = `a { color: hsl(${hue}, 45%, 45%) !important } .box { border-color: hsl(${hue}, 45%, 75%) }`;
+        style.innerHTML = `a { color: hsl(${hue}, 45%, 45%) !important }`;
 
         if (++counter % 4 === 0) {
           const centerX = window.innerWidth * Math.random();
