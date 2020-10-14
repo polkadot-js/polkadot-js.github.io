@@ -14,9 +14,9 @@
       .row { align-items: center; display: flex; justify-content: center }
       .box { background: rgba(255, 255, 255, 0.85); border: 0.125rem solid #ddd; border-radius: 0.25rem; flex: 1 1; margin: 0.5rem; min-width: 15rem; max-width: 20rem; padding: 1rem; text-align: center; white-space: nowrap; width: 20rem; z-index: 2 }
       .dot { border-radius: 50%; position: absolute; z-index: 0 }
-      .header { align-items: center; background: rgba(255, 255, 255, 0.75); display: flex; left: 0; padding: 0.5rem 1rem; position: fixed; right: 0; top: 0; z-index: 1 }
-      .header div { margin-left: 0.5rem }
-      .header img { height: 1.5rem; width: 1.5rem }
+      .header { align-items: center; background: rgba(255, 255, 255, 0.75); display: flex; left: 0; justify-content: space-between; padding: 0.5rem 1rem; position: fixed; right: 0; top: 0; z-index: 1 }
+      .header div.logo { display: flex; align-items: center }
+      .header img { height: 1.5rem; margin-right: 0.5rem; width: 1.5rem }
       .desc { font-size: 0.85rem; opacity: 0.8; white-space: normal }
     </style>
   </head>
@@ -56,8 +56,11 @@
       </div>
     </div>
     <div class="header">
-      <img src="logo.svg" />
-      <div>polkadot{.js}</div>
+      <div class="logo">
+        <img src="logo.svg" />
+        <div>polkadot{.js}</div>
+      </div>
+      <a href="https://github.com/polkadot-js/polkadot-js.github.io/edit/master/index.html">Edit page on GitHub</a>
     </div>
     <script>
       const canvas = document.getElementById('dots');
