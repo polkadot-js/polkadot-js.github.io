@@ -64,7 +64,7 @@
       let hue = Math.floor(Math.random() * 359);
       let counter = 0;
 
-      const draw = () => {
+      function draw () {
         hue = (hue + 1) % 360;
         document.body.style.background = `hsl(${hue}, 45%, 85%)`;
         style.innerHTML = `a { color: hsl(${hue}, 45%, 45%) !important } .box { border-color: hsl(${hue}, 45%, 75%) }`;
@@ -80,9 +80,7 @@
           context.fill();
         }
 
-        setTimeout(() => {
-          window.requestAnimationFrame(draw);
-        }, 25);
+        setTimeout(() => window.requestAnimationFrame(draw), 25);
       };
 
       draw();
