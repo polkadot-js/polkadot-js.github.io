@@ -6,11 +6,25 @@
     <link rel="shortcut icon" href="favicon.ico">
     <title>polkadot{.js}</title>
     <style>
+      @font-face {
+        font-family: 'Nunito Sans';
+        font-style: normal;
+        font-weight: 400;
+        src: url('./fonts/NunitoSans/nunito-sans-v6-vietnamese_latin-ext_latin-regular.eot');
+        src: local('Nunito Sans Regular'), local('NunitoSans-Regular'),
+          url('./fonts/NunitoSans/nunito-sans-v6-vietnamese_latin-ext_latin-regular.eot?#iefix') format('embedded-opentype'),
+          url('./fonts/NunitoSans/nunito-sans-v6-vietnamese_latin-ext_latin-regular.woff2') format('woff2'),
+          url('./fonts/NunitoSans/nunito-sans-v6-vietnamese_latin-ext_latin-regular.woff') format('woff'),
+          url('./fonts/NunitoSans/nunito-sans-v6-vietnamese_latin-ext_latin-regular.ttf') format('truetype'),
+          url('./fonts/NunitoSans/nunito-sans-v6-vietnamese_latin-ext_latin-regular.svg#NunitoSans') format('svg');
+      }
+
       a { color: #ff8c00 !important; text-decoration: none }
-      body { color: #4e4e4e; font-family: sans-serif; height: 100vh; overflow: hidden; padding: 0 }
+      body { color: #4e4e4e; font-family: 'Nunito Sans', sans-serif; height: 100vh; overflow: hidden; padding: 0 }
       canvas#dots { left: 0; position: fixed; top: 0; z-index: 0 }
-      h3 { font-weight: 100; margin: 1rem 0; opacity: 0.95; text-transform: lowercase }
+      h3 { font-weight: 400; margin: 1rem 0; opacity: 0.95; text-transform: lowercase }
       p { margin: 1rem 0 }
+
       .box { background: rgba(255, 255, 255, 0.85); border-radius: 0.25rem; flex: 1 1; margin: 0.5rem; min-width: 15rem; max-width: 21rem; padding: 0 1.5rem; text-align: center; white-space: nowrap; width: 21rem; z-index: 2 }
       .container { align-items: center; display: flex; flex-direction: column; justify-content: center; height: 100%; }
       .desc { font-size:  0.95rem; opacity: 0.85; white-space: normal }
