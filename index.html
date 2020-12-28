@@ -65,6 +65,10 @@
       <a href="https://github.com/polkadot-js/polkadot-js.github.io/edit/master/index.html">edit page on github</a>
     </div>
     <script>
+      if (window.self !== window.top) {
+        window.top.location.href = window.location.href;
+      }
+
       const canvas = document.getElementById('dots');
       const style = document.createElement('style');
 
