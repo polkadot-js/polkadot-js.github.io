@@ -1,110 +1,303 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=0.5, maximum-scale=1">
-    <link rel="shortcut icon" href="favicon.ico">
-    <title>polkadot{.js}</title>
-    <style>
-      a { color: #ff8c00 !important; text-decoration: none }
-      body { color: #4e4e4e; font-family: "-apple-system", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; height: 100vh; overflow: hidden; padding: 0 }
-      canvas#dots { left: 0; position: fixed; top: 0; z-index: 0 }
-      h3 { font-weight: 400; margin: 1rem 0; opacity: 0.95; text-transform: lowercase }
-      p { margin: 1rem 0 }
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=0.5, maximum-scale=1"
+    />
+    <meta property="og:title" content="polkadot{.js}" />
+    <meta property="og:url" content="https://polkadot.js.org/" />
+    <meta property="og:image" content="./logo.svg" />
+    <meta property="og:type" content="website" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="./style.css" />
 
-      .box { background: rgba(255, 255, 255, 0.85); border-radius: 0.25rem; flex: 1 1; margin: 0.5rem; min-width: 15rem; max-width: 21rem; padding: 0 1.5rem; text-align: center; white-space: nowrap; width: 21rem; z-index: 2 }
-      .container { align-items: center; display: flex; flex-direction: column; justify-content: center; height: 100%; }
-      .desc { font-size:  0.95rem; opacity: 0.85; white-space: normal }
-      .dot { border-radius: 50%; position: absolute; z-index: 0 }
-      .header { align-items: center; background: rgba(255, 255, 255, 0.85); display: flex; left: 0; justify-content: space-between; padding: 0.5rem 1rem; position: fixed; right: 0; top: 0; z-index: 1 }
-      .header div.logo { display: flex; align-items: center }
-      .header img { height: 1.5rem; margin-right: 0.5rem; width: 1.5rem }
-      .row { align-items: center; display: flex; justify-content: center }
-    </style>
+    <title>polkadot{.js}</title>
   </head>
   <body>
-    <canvas id="dots"></canvas>
-    <div class="container">
-      <div class="row">
-        <div class="box">
-          <h3>Apps Wallet (hosted)</h3>
-          <p class="desc">A wallet built on the polkadot-js stack. This version is updated alongside any changes to the code and always has the latest features.</p>
-          <p><a href="https://polkadot.js.org/apps/">polkadot.js.org/apps</a></p>
+    <!-- Header -->
+    <header class="headerWrapper">
+      <img id="logo" src="assets/header_logo.svg" />
+      <div class="header__launch" onclick="onLaunchExplorer()">
+        <div class="header__launch__title">
+          <p>
+            Launch Polkadot <br />
+            Developer Interface
+          </p>
+          <img id="logo" src="favicon.ico" />
         </div>
-        <div class="box">
-          <h3>Apps Wallet (IPFS)</h3>
-          <p class="desc">An IPFS version of the polkadot-js wallet. This version is updated weekly but fits closer with the Web3 vision of decentralization.</p>
-          <p><a href="https://dotapps.io/">dotapps.io</a></p>
+        <img src="assets/polkadot_explorer.svg" alt="Explorer" />
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h2>Explore Polkadot with user-friendly wallets.</h2>
+      <p>Access the Polkadot Ecosystem through these easy to use wallets.</p>
+    </section>
+
+    <!-- Extensions -->
+    <section class="cardWrapper">
+      <div class="desktop__extensions">
+        <div class="badge">For desktop</div>
+
+        <div class="card__items">
+          <!-- SubWallet -->
+          <div class="card__item">
+            <div>
+              <div class="card__header">
+                <img alt="SubWallet" src="assets/extensions/subwallet.svg" />
+                <a
+                  target="_blank"
+                  href="https://www.subwallet.app/download.html"
+                  class="extension__cta"
+                >
+                  Download
+                </a>
+              </div>
+              <div class="card__info">
+                <h2>SubWallet</h2>
+                <div class="extension__badges">
+                  <div class="extension__badge">Mobile app</div>
+                  <div class="extension__badge">Web extension</div>
+                </div>
+              </div>
+            </div>
+            <img alt="SubWallet App" src="assets/subwallet_app.svg" />
+          </div>
+
+          <!-- Talisman -->
+          <div class="card__item">
+            <div>
+              <div class="card__header">
+                <img alt="Talisman" src="assets/extensions/talisman.svg" />
+                <a
+                  target="_blank"
+                  href="https://talisman.xyz/"
+                  class="extension__cta"
+                >
+                  Download
+                </a>
+              </div>
+              <div class="card__info">
+                <h2>Talisman</h2>
+                <div class="extension__badges">
+                  <div class="extension__badge">Web extension</div>
+                </div>
+              </div>
+            </div>
+            <img alt="Talisman App" src="assets/talisman_app.svg" />
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="box">
-          <h3>Extension</h3>
-          <p class="desc">A browser-based vault for management of your account keys. It is meant to be used alongside wallets such as the apps UI.</p>
-          <p><a href="https://polkadot.js.org/extension/">polkadot.js.org/extension</a></p>
-        </div>
-        <div class="box">
-          <h3>Phishing</h3>
-          <p class="desc">Community driven lists of urls and addresses of dishonest operators. Used ecosystem wide in wallets and extensions.</p>
-          <p><a href="https://polkadot.js.org/phishing/">polkadot.js.org/phishing</a></p>
+      <div class="mobile__extensions">
+        <div class="badge">For mobile</div>
+
+        <div class="card__items">
+          <!-- Nova Wallet -->
+          <div class="card__item">
+            <div>
+              <div class="card__header">
+                <img alt="Nova" src="assets/extensions/nova.svg" />
+                <a
+                  target="_blank"
+                  href="https://novawallet.io/"
+                  class="extension__cta"
+                  >Download</a
+                >
+              </div>
+              <div class="card__info">
+                <h2>Nova Wallet</h2>
+                <div class="extension__badges">
+                  <div class="extension__badge">Mobile app</div>
+                </div>
+              </div>
+            </div>
+            <img alt="Nova App" src="assets/nova_app.svg" />
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="box">
-          <h3>Documentation</h3>
-          <p class="desc">Developer documentation for all (most?) of the libraries under the polkadot-js umbrella. If you want to build, this is where to start.</p>
-          <p><a href="https://polkadot.js.org/docs/">polkadot.js.org/docs</a></p>
+    </section>
+
+    <!-- Developer Tools -->
+    <sections class="cardWrapper">
+      <div class="developerTools">
+        <div class="badge">For developers</div>
+        <div class="developerTools__hero">
+          <h2>Polkadot Developer Tools</h2>
+          <p>Build, Deploy, and Interact with the Polkadot Ecosystem</p>
         </div>
-        <div class="box">
-          <h3>code</h3>
-          <p class="desc">The code for everything we do. API, utilities, crypto, tools, user-facing interfaces and documentation.</p>
-          <p><a href="https://github.com/polkadot-js/">github.com/polkadot-js</a></p>
+
+        <div class="card__items">
+          <!-- Polkadot Developer Signer -->
+          <div class="card__item">
+            <div>
+              <div class="card__header">
+                <img alt="Polkadot" src="assets/extensions/polkadot.svg" />
+                <a
+                  target="_blank"
+                  href="https://polkadot.js.org/extension/"
+                  class="extension__cta"
+                  id="developerSigner"
+                >
+                  Download
+                </a>
+              </div>
+              <div class="card__info">
+                <h2>
+                  Polkadot Developer<br />
+                  Signer
+                </h2>
+              </div>
+            </div>
+            <img
+              alt="Polkadot Developer Signer"
+              src="assets/polkadot_developer_signer.svg"
+              style="background-color: #e0e7ff80; border-radius: 16px"
+            />
+          </div>
+
+          <!-- Polkadot Developer Interface -->
+          <div class="card__item">
+            <div>
+              <div class="card__header">
+                <img
+                  alt="Polkadot"
+                  src="assets/polkadot-developer-interface-icon.svg"
+                />
+                <a
+                  target="_blank"
+                  href="https://polkadot.js.org/apps/"
+                  class="extension__cta"
+                >
+                  Launch
+                </a>
+              </div>
+              <div class="card__info">
+                <h2>
+                  Polkadot Developer<br />
+                  Interface
+                </h2>
+              </div>
+            </div>
+            <img
+              alt="Polkadot Developer Interface"
+              src="assets/polkadot_developer_interface.svg"
+              style="background-color: #e0e7ff80; border-radius: 16px"
+            />
+          </div>
+
+          <!-- Docs -->
+          <div class="chip__item">
+            <img alt="Docs" src="assets/docs.svg" />
+            <div class="chip__info__wrapper">
+              <div class="chip__info">
+                <h2>Docs</h2>
+                <a
+                  target="_blank"
+                  href="https://polkadot.js.org/docs/"
+                  class="chip__cta"
+                >
+                  LINK
+                </a>
+              </div>
+              <p>
+                Developer documentation for libraries under the polkadot-js
+                umbrella. If you want to build, this is where to start.
+              </p>
+            </div>
+          </div>
+
+          <!-- Code -->
+          <div class="chip__item">
+            <img alt="Code" src="assets/code.svg" />
+            <div class="chip__info__wrapper">
+              <div class="chip__info">
+                <h2>Code</h2>
+                <a
+                  target="_blank"
+                  href="https://github.com/polkadot-js/"
+                  class="chip__cta"
+                >
+                  LINK
+                </a>
+              </div>
+              <p>
+                API, utilities, crypto, tools, user-facing interfaces and
+                documentation.
+              </p>
+            </div>
+          </div>
+
+          <!-- Phishing -->
+          <div class="chip__item">
+            <img alt="Phishing" src="assets/phishing.svg" />
+            <div class="chip__info__wrapper">
+              <div class="chip__info">
+                <h2>Phishing</h2>
+                <a
+                  target="_blank"
+                  href="https://polkadot.js.org/phishing/"
+                  class="chip__cta"
+                >
+                  LINK
+                </a>
+              </div>
+              <p>
+                Community driven lists of urls and addresses of dishonest
+                operators. Used ecosystem wide in wallets and extensions.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="header">
-      <div class="logo">
-        <img src="logo.svg" />
-        <div>polkadot{.js}</div>
+    </sections>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer__left">
+        <img alt="Polkadot" src="assets/polkadot_logo.svg" />
+        <section>
+          <span>C</span>
+          <span id="currentYear"></span>
+        </section>
       </div>
-      <a href="https://github.com/polkadot-js/polkadot-js.github.io/edit/master/index.html">edit page on github</a>
-    </div>
+      <div class="footer__right">
+        <a href="https://polkadot-discord.w3f.tools/" target="_blank">
+          <img alt="Discord" src="assets/socials/discord.svg" />
+        </a>
+        <a href="https://www.reddit.com/r/Polkadot/" target="_blank">
+          <img alt="Reddit" src="assets/socials/reddit.svg" />
+        </a>
+        <a href="https://github.com/polkadot-js/" target="_blank">
+          <img alt="Github" src="assets/socials/github.svg" />
+        </a>
+        <a
+          href="https://www.youtube.com/channel/UCB7PbjuZLEba_znc7mEGNgw"
+          target="_blank"
+        >
+          <img alt="YouTube" src="assets/socials/youtube.svg" />
+        </a>
+        <a href="https://twitter.com/Polkadot" target="_blank">
+          <img alt="X" src="assets/socials/x.svg" />
+        </a>
+      </div>
+    </footer>
+
     <script>
       if (window.self !== window.top) {
         window.top.location.href = window.location.href;
       }
 
-      const canvas = document.getElementById('dots');
-      const style = document.createElement('style');
-
-      canvas.height = window.innerHeight * 4;
-      canvas.width = window.innerWidth * 4;
-      document.head.appendChild(style);
-
-      const context = canvas.getContext('2d');
-      let hue = Math.floor(Math.random() * 359);
-      let counter = 0;
-
-      function draw () {
-        hue = (hue + 1) % 360;
-        document.body.style.background = `hsl(${hue}, 45%, 85%)`;
-        style.innerHTML = `a { color: hsl(${hue}, 45%, 45%) !important }`;
-
-        if (++counter % 4 === 0) {
-          const centerX = window.innerWidth * Math.random();
-          const centerY = window.innerHeight * Math.random();
-          const radius = (Math.floor(32000 * Math.random()) / 1000) + 8;
-
-          context.beginPath();
-          context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
-          context.fillStyle = `hsl(${hue}, 45%, 75%)`;
-          context.fill();
-        }
-
-        setTimeout(() => window.requestAnimationFrame(draw), 25);
+      window.onload = function () {
+        document.getElementById("currentYear").innerText =
+          new Date().getFullYear();
       };
 
-      draw();
+      function onLaunchExplorer() {
+        window.open("https://polkadot.js.org/apps/", "_blank");
+      }
     </script>
   </body>
 </html>
